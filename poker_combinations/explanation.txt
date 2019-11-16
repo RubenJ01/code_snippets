@@ -1,0 +1,38 @@
+I want to merge two notepads worth of text into one (With a twist).
+
+I have two long lists of hand data in two separate notepads for poker combination simulations.
+
+The text chunks describe the hands in a betting range.
+
+The format: 9s7s6s3s@15
+
+The first eight characters are just the hand itself, 9 of spades, 7 of spades, 6 of spades, 3 of spades.
+The @15 means, "bet this exact hand 15% of the time."
+
+1.
+If there is a hand match between the two text documents,
+(ex: 9s7s6s3s@15 in one of the notepads and 9s7s6s3s@68 in the other)
+
+then add the last two digits of each together, to make 9s7s6s3s@83.
+then copy this answer followed by a comma in a new notepad that can hold atleast .5-1mb of text.
+(unless its the very last hand, then no comma, as its the end of the long list of hands.)
+
+(If the sum is over 100, make sure it doesn't go over 100. This shouldn't be a problem anyway)
+(MATCH= same suit and same cards)
+(Example of two NOT MATCHING hands: (9s7s6s3s and 9s7s6s3h, or 9s7s6s3s and 9s7s6s4s)
+(Example of two MATCHING hands: (9s7s6s3s and 9s7s6s3s, or 9s7s6s3s and 3s9s7s6s) (The latter shouldn't appear anyway)
+2.
+
+If there is no  hand match between the two notepads, (ex: 9s7s6s3s@15 found in one notepad, but the other doesn't have a 9s7s6s3s)
+then just put that hand ZyZyZyZy@XX followed by a comma in the new notepad since it is unique.
+
+I want this basically:
+
+notepad 1 (long list of garbage): 9s7s6s3s@15,Ts7s6s3s@1,9s9h9c9d@46..............................
+
+notepad 2(long list of garbage): 9s7s6s3s@68,Ts7s6s3s@11.............................
+
+SEARCH/ADD stuff and then...
+
+notepad 3 RESULT: 9s7s6s3s@83,Ts7s6s3s@12,9s9h9c9d@46...............
+

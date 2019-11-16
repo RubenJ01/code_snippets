@@ -1,0 +1,2 @@
+All exercises are found here: https://www.practicepython.org/
+These are just my answers.
