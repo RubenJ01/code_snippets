@@ -22,3 +22,4 @@ for x in dict1:
         # not unique find the match and add the values up and then write to output file
         output.write(f"{x}@{int(dict1[x]) + int(dict2[x])},")
 
+__author__ = "Ruben Eekhof"

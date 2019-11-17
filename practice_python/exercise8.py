@@ -10,6 +10,7 @@ Scissors beats paper
 Paper beats rock
 """
 
+# initializing game state
 another_game = True
 
 
